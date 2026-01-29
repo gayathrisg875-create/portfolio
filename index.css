@@ -1,0 +1,82 @@
+ .header{
+    text-align: center;
+    padding: 2%;
+    background-color: green;
+    color: white;
+ }
+ h2{
+    color: green;
+    padding-bottom: 10px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+ }
+ .body{
+   width: 70%;
+   margin: 40px auto;
+   padding: 30px;
+   font-family:sans-serif;
+}
+ .about{
+   line-height: 1.6;
+ }
+ .edu{
+   margin-top: 6%;
+   line-height: 1.6;
+ }
+ .ul li{
+display:inline-block;
+padding: 10px 12px;
+margin:10px;
+border-radius: 20px;
+background-color: green;
+color: white;
+ }
+ .cont{
+   line-height: 1.7;
+ }
+ .foot{
+   padding: 2%;
+   background-color: green;
+   text-align: center;
+   color: white;
+ }
+ textarea {
+  width: 70%;
+  min-height: 80px;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+#commentList {
+  margin-top: 15px;
+}
+
+.comment {
+  background: #f4f4f4;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.no-comment {
+  color: rgb(13, 10, 10);
+  font-style: italic;
+}

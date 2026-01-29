@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Gayathri Portfolio
+        </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <div class="header">
+        <h1 >GAYATHRI S</h1>
+<h5>Full stack Java Developer | Problem solver | Continous learner</h5>
+</div>
+    <body>
+        <div class="body">
+        <h2>ABOUT ME</h2>
+        <p class="about">I am passionate full satck java developer with a strong foundation in HTML,CSS.I enjoy building responsive web applications and continuosly improving technical skills.I am eager to apply my knowledge in real world-projects. </p>
+        <h2>EDUCATION</h2>
+        <p class="edu">B.E Electronics and Communication Engineering</br>2023-2027</p>
+        <h2>SKILLS</h2>
+         <ul class="ul">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Mysql</li>
+            <li>Java</li>
+        </ul>
+        <h2>CONTACT</h2>
+        <p class="cont"><b>Email:</b>gayathrisg875@gamil.com</br><b>Phone:</b>9790729030</br><a href="https://www.linkedin.com/in/gayathri-s-0a2611312">Linkedin profile</a>
+                 <h2>COMMENTS</h2>
+ <textarea id="commentBox" placeholder="Enter your comment..."></textarea><br>
+
+    <button onclick="addComment()">Add Comment</button>
+
+    <div id="commentList">
+      <p>Recient Comment:</p>
+      <p class="no-comment">No comments yet. Be the first to comment!</p>
+      <p id="errorMsg" style="color:red; font-size:13px; display:none; margin:4px 0;">
+    Comment cannot be empty
+  </p>
+
+    </div>
+    <footer class="foot">
+                @ 2026 Portfolio | Designed by Gayathri Suresh
+            </footer>
+             <!-- JAVASCRIPT -->
+   <script>
+  const textarea = document.getElementById("commentBox");
+  const errorMsg = document.getElementById("errorMsg");
+
+  textarea.addEventListener("input", function () {
+    // auto expand
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+
+    // hide error while typing
+    errorMsg.style.display = "none";
+    this.style.borderColor = "#ccc";
+  });
+
+  function addComment() {
+    const text = textarea.value.trim();
+    const commentList = document.getElementById("commentList");
+
+    if (text === "") {
+      errorMsg.style.display = "block";
+      textarea.style.borderColor = "red";
+      return;
+    }
+
+    const noComment = document.querySelector(".no-comment");
+    if (noComment) noComment.remove();
+
+    const div = document.createElement("div");
+    div.className = "comment";
+    div.innerText = text;
+
+    commentList.appendChild(div);
+
+    textarea.value = "";
+    textarea.style.height = "32px";
+    textarea.style.borderColor = "#ccc";
+  }
+</script>
+    </body>
+</html>
